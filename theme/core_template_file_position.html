@@ -1,0 +1,34 @@
+html.tpl.php
+	- modules/system
+	- Prints the structure of the HTML document, including the contents of <head> tags, e.g. $scripts, and $styles, as well as opening and closing <body> tags with $page_top, $page and $page_bottom regions printed inside. Unless you need to change the DOCTYPE, there’s probably no reason to override this file.
+
+
+page.tpl.php
+	-	modules/system
+	- Prints the page level regions and other hard-coded variables such as $logo, $site_name, $tabs, $main_menu, etc. Full control of the site layout is possible by manipulating this file, and most themes provide their own version of it.
+
+
+region.tpl.php
+	- modules/system
+	- Prints the HTML markup for regions.
+
+
+block.tpl.php
+	- modules/block
+	- Prints the HTML markup for blocks.
+
+
+node.tpl.php
+	-	modules/node
+	- Prints the HTML markup for nodes.
+
+
+comment.tpl.php
+	- modules/comment
+	- Prints the HTML markup for comments.
+
+
+field.tpl.php	
+	- modules/field/theme*
+	- Prints the HTML markup for fields. There are many different types of fields, and since this file needs to cover every case, its implementation is very general. If having semantic markup is important to you, you’ll probably end up with a few versions of this template.
+
