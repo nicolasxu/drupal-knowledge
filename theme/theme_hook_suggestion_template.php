@@ -32,9 +32,10 @@ block__MODULE__DELTA
 	- Target the System module’s Navigation block, you would use block--system--navigation.tpl.php. In this example, “system” is the module and “navigation” is block, and is the delta
 
 */
-
-
-
+/*
+// target front page:
+   page--front.tpl.php
+*/
 // below are the code determine template suggestions in template_preprocess_block():
 
 $variables['theme_hook_suggestions'][] = 'block__' . $variables['block']->region;
