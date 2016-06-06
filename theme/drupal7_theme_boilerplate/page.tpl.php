@@ -1,0 +1,1 @@
+<h1>This is page is not front page</h1>
