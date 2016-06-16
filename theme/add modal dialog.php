@@ -1,0 +1,5 @@
+<?php 
+
+
+drush dl automodal
+
